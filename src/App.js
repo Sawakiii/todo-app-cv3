@@ -26,7 +26,7 @@ const App = () => {
 
       {/* 他のコンポーネントにデータを渡す時は、以下のように記述します */}
       {/* <コンポーネント名 子コンポーネントで使う名前={親コンポーネントでの名前}></コンポーネント名> */}
-      <List todos={todos}></List>
+      <List todos={todos} setTodos={setTodos}></List>
     </>
   )
 }

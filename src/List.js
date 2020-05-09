@@ -12,9 +12,9 @@ const List = (props) => {
             {/* props.todos = ["html", "css", "js"] */}
             {/* map関数を使った後 */}
             {/* props.todos = [<Item todo={"html"}></Item>, <Item todo={"css"}></Item>, <Item></Item>] */}
-            {props.todos.map((todo)=>{
+            {props.todos.map((todo, index)=>{
                 return (
-                    <Item todo={todo}></Item>
+                    <Item todo={todo} index={index} todos={props.todos} setTodos={props.setTodos}></Item>
                 )
             })}
 
